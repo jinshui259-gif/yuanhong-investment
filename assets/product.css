@@ -7,8 +7,11 @@
 .mast .nav-link[aria-current="page"]::after { background: #145d7f; }
 .mast .nav-cta { border-color: #8da3ae; }
 .mast .nav-cta:hover, .mast .nav-cta[aria-current="page"] { background: #eef4f5; }
-.footer .brand { padding: 4px 10px; background: #fff; }
-.footer .brand-lockup { width: 166px; }
+.footer .brand { mix-blend-mode: screen; }
+.footer .brand-lockup {
+  width: 166px;
+  filter: grayscale(1) contrast(1.8) invert(1);
+}
 @media (max-width:780px) {
  .mast .brand-lockup { width: 157px; }
  .mast-inner { min-height: 90px; }
